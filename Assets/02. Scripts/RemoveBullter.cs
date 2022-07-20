@@ -8,7 +8,7 @@ public class RemoveBullter : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         // 충돌한 객체가 Bullter인지 확인
-        if (collision.gameObject.tag == "BULLET")
+        if (collision.gameObject.CompareTag("BULLET"))
         {
             // 총알 삭제
             Destroy(collision.gameObject);
